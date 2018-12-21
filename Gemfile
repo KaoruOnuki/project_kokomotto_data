@@ -45,6 +45,8 @@ group :development, :test do
 end
 
 gem 'dotenv-rails'
+gem 'bootstrap', '~> 4.1.3'
+gem 'jquery-rails'
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
