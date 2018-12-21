@@ -1,2 +1,31 @@
-<h1>Profiles#index</h1>
-<p>Find me in app/views/profiles/index.html.erb</p>
+<div class="container">
+  <h1>[データ入力]</h1>
+
+  <div>
+    <ul class="b">
+      <li>NO</li>
+      <li>ドメイン名</li>
+      <li>法人名</li>
+      <li>都道府県</li>
+      <li>住所</li>
+      <li>電話</li>
+      <li>FAX</li>
+      <li>URL</li>
+      <li>法人番号</li>
+    </ul>
+
+    <% @all.each do |n| %>
+    <ul class="b">
+      <li><%= n.id %></li>
+      <li><%= n.domain %></li>
+      <li><%= n.company_name %></li>
+      <li><%= n.state %></li>
+      <li><%= n.address %></li>
+      <li><%= n.phone %></li>
+      <li><%= n.fax %></li>
+      <li><%= n.url %></li>
+      <li><%= n.ein %></li>
+    </ul>
+    <% end %>
+  </div>
+</div>
